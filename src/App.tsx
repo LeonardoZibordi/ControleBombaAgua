@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import Home from 'views/Home'
+import Home from 'views/Main/Main'
 import { initializeApp } from "firebase/app"
 
 import './App.scss'
@@ -15,6 +15,9 @@ function App() {
 	return (
 		<BrowserRouter>
 			<React.Suspense fallback={<></>}>
+				<div className="header">
+					<img src="/AquaSense.png" alt="" />
+				</div>
 				<div className="main-content">
 					<Routes>
 						<Route
@@ -31,23 +34,3 @@ function App() {
 }
 
 export default App
-
-// set(child(dbRef, '/yay'), {
-// 	[`yay${i}`]: `hehehe${i}`
-// })
-// i++
-// const postData = {
-// 	author: `test${i}`,
-// 	authorPic: 'picture'
-// };
-// const updates: any = {};
-// updates['/posts/'] = postData;
-// updates['/user-posts/' + 'uid' + '/'] = postData;
-// i++
-// update(dbRef, updates)
-// onValue(dbRef, (response) => {
-// 	console.log('yay2', response.val())
-// })
-// get(dbRef).then(response => {
-// 	console.log('yay', response.val(), dbRef)
-// })

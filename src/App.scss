@@ -1,5 +1,35 @@
-.main-content{
+@import '/src//GlobalVariables/GlobalVariables';
+
+.main-content {
 	width: 100vw;
 	height: 100vh;
 	overflow: auto;
+
+	label {
+		font-size: $title-font-size;
+	}
+
+	.MuiCard-root {
+		@media (min-width: $screensize) {
+			box-shadow: $box-shadow;
+		}
+	}
+
+	hr {
+		margin: 12px 0;
+	}
+
+	.card-title {
+		font-size: $h2-font-size;
+		font-weight: bold;
+	}
+
+	.green {
+		color: $green
+	}
+
+	.red {
+		color: $red;
+	}
+
 }

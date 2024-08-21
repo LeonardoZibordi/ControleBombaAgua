@@ -9,7 +9,7 @@
 	"rules": {
 		"no-descending-specificity": null,
 		"selector-class-pattern": [
-			"^([_a-z][a-z0-9]*)(-[a-z0-9]+)*$|^Mui.*$|^App.*$|^rdr.*$",
+			"^([_a-z][a-z0-9]*)(-[a-z0-9]+)*$|^Mui.*$|^App.*$|^rdr.*$|NumberInput.*$",
 			{
 				"message": "Expected class selector to be kebab-case"
 			}
